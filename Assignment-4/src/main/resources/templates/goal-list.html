@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Goals</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container py-5">
+    <h2 class="text-center mb-4">Create New Goal</h2>
+    <form action="/goal/all" method="post" class="row g-3">
+        <div class="col-md-2">
+            <input type="number" id="userId" name="userId" placeholder="Enter User Id" class="form-control"/>
+        </div>
+        <div class="col-md-3">
+            <input type="text" id="title" name="title" placeholder="Enter Title" class="form-control"/>
+        </div>
+        <div class="col-md-3">
+            <input type="text" id="details" name="details" placeholder="Enter Details" class="form-control"/>
+        </div>
+        <div class="col-md-2">
+            <input type="date" id="targetDate" name="targetDate" placeholder="date" class="form-control"/>
+        </div>
+        <div class="col-md-2">
+            <select id="status" name="status" class="form-select">
+                <option value="pending">pending</option>
+                <option value="in-progress">in-progress</option>
+                <option value="done">done</option>
+                <option value="cancelled">cancelled</option>
+            </select>
+        </div>
+        <div class="col-12">
+            <button href="/goal/all" type="submit" class="btn btn-success">Create New Goal</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
+
+
